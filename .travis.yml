@@ -1,0 +1,38 @@
+language: go
+
+go:
+  - 1.7.3
+
+branches:
+  only:
+    - source
+
+env:
+ global:
+   - GH_REF: github.com/mzvast/mzvast.github.io.git
+
+sudo: required
+
+git:
+  submodules: false
+
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  - git submodule update --init --recursive
+
+install:
+  - sudo pip install Pygments
+  - go get github.com/spf13/hugo
+
+script:
+  - hugo
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "mzvast"
+  - git config user.email "mzvast@gmail.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master

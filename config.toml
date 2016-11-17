@@ -1,0 +1,49 @@
+baseurl = "https://miaocode.tk/"
+title = "喵扣|MiaoCode"
+languageCode = "en-us"
+theme = "casper"
+paginate = 5
+DisqusShortname = "mzvast"
+Copyright = "All rights reserved - 2016"
+canonifyurls = true
+
+# color-codes for highlighting derived from this style
+pygmentsStyle = "xcode"
+# true: use pygments-css or false: color-codes directly
+pygmentsUseClasses = false
+# add syntax highlighting with GitHub flavoured code fences 
+PygmentsCodeFences = true
+
+[permalinks]
+  post = ":slug"
+[params]
+  description = "代码会唱歌"
+  cover = "images/cover.jpg"
+  author = "Nick Wong"
+  # authorlocation = "Nanjing, China"
+  # authorwebsite = "https://miaocode.tk"
+  # bio= "my bio"
+  logo = "images/mzvast.png"
+  # googleAnalyticsUserID = "UA-79101-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  # RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "mzvast"
+  # twitterName = ""
+  # facebookName = ""
+  # linkedinName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = true
+  [params.social]
+    twitter = "mzvast"
+
+[[menu.main]]
+  name = "My Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "About me"
+  weight = -110
+  identifier = "about"
+  url = "/about"
