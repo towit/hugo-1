@@ -15,7 +15,7 @@ pygmentsUseClasses = false
 PygmentsCodeFences = true
 
 [permalinks]
-  post = ":slug"
+  post = ":slug/"
 [params]
   description = "代码会唱歌"
   cover = "images/cover.jpg"
