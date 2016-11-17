@@ -2,7 +2,7 @@
 menu = ""
 title = "raspberrypi realvnc"
 slug = "raspberrypi-realvnc"
-image = ""
+image = "http://ogscovhkh.bkt.clouddn.com/raspberry-pi-girl.jpg"
 date = "2016-11-16T21:42:46+08:00"
 comments = true
 share = true
