@@ -64,10 +64,11 @@ PygmentsCodeFences = true
 ## Travis CI的配置
 看到网上许多的配置搞的来比较复杂，有的还抄来抄去抄错了。
 
-我做了个直观易懂的配置，基本都是常见命令。云端构建一次平均1分20多秒。
+我做了个直观易懂的配置，基本都是常见命令。云端构建一次平均20多秒。
 直接上配置文件`travis.yml`：
 
 - 注意要先生成好GH_TOKEN并加入到Travis的环境变量里去：
+- 注意直接用go get < github url >的方式下载到的不是稳定版，为了和本地环境一致（0.17版本），需要用下载编译后可执行文件的方式。
 
 ``` bash
 language: go
@@ -95,10 +96,13 @@ before_install:
 
 install:
   - sudo pip install Pygments
-  - go get github.com/spf13/hugo
+  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  - tar xzf hugo_0.17_Linux-64bit.tar.gz
+  - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 hugo
+  - chmod a+x hugo
 
 script:
-  - hugo
+  - ./hugo
 
 after_script:
   - cd ./public
@@ -109,3 +113,8 @@ after_script:
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 ```
+## 修订说明
+----------
+时间 | 说明  
+:----|:--------
+2016-11-19|修改Travis配置文件中hugo的下载方式，确保版本为0.17，同时加快构建速度到20秒。
