@@ -43,14 +43,13 @@
 </header>
 
 <main class="content" role="main">
-  <div>
+  <div class="terms-container">
 
-      <ul>
       {{ $data := .Data }}
       {{ range $key, $value := .Data.Terms }}
-        <li><a href="{{$baseurl}}{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }}</a> {{ len $value }}</li>
+        
+        <a class="terms-box" href="{{$baseurl}}{{ $data.Plural }}/{{ $key | urlize }}">{{ $key }} {{ len $value }}</a>
       {{ end }}
-     </ul>
   </div>
 
    
