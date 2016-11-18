@@ -6,7 +6,7 @@ title = "关于"
 image = ""
 noauthor = true
 comments = false
-
+type = "_default"
 +++
 
 关于我吖

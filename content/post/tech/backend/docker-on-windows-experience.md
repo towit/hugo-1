@@ -7,6 +7,7 @@ categories:
 date: 2015-07-08T8:26:07+08:00
 tags:
   - Docker
+type: page
 ---
 
 主要介绍windows平台中的一些体验

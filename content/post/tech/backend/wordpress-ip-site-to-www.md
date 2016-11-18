@@ -11,6 +11,7 @@ id: 56
 categories:
   - 技术
 date: 2015-07-05T15:46:29+08:00
+type: page
 ---
 注册域名以及绑定DNS记录的体验。
 <!--more-->

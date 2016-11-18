@@ -13,6 +13,7 @@ image = ""
 menu = ""
 date = "2016-11-17T16:12:18+08:00"
 slug = "hello-hugo-and-more"
+type = "page"
 
 +++
 这两天把博客从hexo转移到了hugo，并实现了自动化构建，借此机会趁热打铁把过程记录一下。<!--more-->

@@ -7,6 +7,7 @@ categories:
 date: 2015-07-07T13:26:00+08:00
 tags:
   - vagrant
+type: page
 ---
 
 首先需要下载[vagrantup](https://www.vagrantup.com/)和[virtualbox](https://www.virtualbox.org/)

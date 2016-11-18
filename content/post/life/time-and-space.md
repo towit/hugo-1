@@ -7,6 +7,7 @@ id: 75
 categories:
   - 日常
 date: 2015-07-29T17:02:50+08:00
+type: page
 ---
 
 <!-- [![拥挤的推送](http://www.miaocode.tk/wp-content/uploads/2015/07/image-169x300.jpg)](http://www.miaocode.tk/wp-content/uploads/2015/07/image.jpg) -->
