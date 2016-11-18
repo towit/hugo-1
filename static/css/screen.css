@@ -2104,9 +2104,9 @@ body:not(.post-template) .post-title {
 
 .terms-box{
   /* padding: 0.5rem; */
-  margin: 2px;
-  width: 24%;
-  border: dashed 1px grey;
+  /* margin: 2px; */
+  width: 25%;
+  /* border: dashed 1px grey; */
   text-align: center;
   text-decoration: none;
   border-radius: 1rem;
@@ -2120,4 +2120,16 @@ body:not(.post-template) .post-title {
 
 .terms-box:hover a{
   color: white;
+}
+
+@media only screen and (max-width: 900px){
+  .terms-box{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+.terms-box{
+    width: 100%;
+  }
 }
