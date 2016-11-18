@@ -23,10 +23,13 @@ before_install:
 
 install:
   - sudo pip install Pygments
-  - go get github.com/spf13/hugo
+  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  - tar xzf hugo_0.17_Linux-64bit.tar.gz
+  - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 hugo
+  - chmod a+x hugo
 
 script:
-  - hugo
+  - ./hugo
 
 after_script:
   - cd ./public
