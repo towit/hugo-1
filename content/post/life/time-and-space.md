@@ -5,7 +5,7 @@ tags:
   - 随想
 id: 75
 categories:
-  - 日常
+  - life
 date: 2015-07-29T17:02:50+08:00
 type: page
 ---

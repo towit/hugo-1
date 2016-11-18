@@ -3,7 +3,7 @@ title: Docker初体验
 slug: docker-on-windows-experience
 id: 64
 categories:
-  - 技术
+  - tech
 date: 2015-07-08T8:26:07+08:00
 tags:
   - Docker

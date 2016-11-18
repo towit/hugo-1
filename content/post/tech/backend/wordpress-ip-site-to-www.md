@@ -8,8 +8,8 @@ tags:
   - VPS
   - WordPress
 id: 56
-categories:
-  - 技术
+categories: 
+  - tech
 date: 2015-07-05T15:46:29+08:00
 type: page
 ---

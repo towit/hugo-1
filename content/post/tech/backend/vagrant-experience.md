@@ -7,6 +7,8 @@ categories:
 date: 2015-07-07T13:26:00+08:00
 tags:
   - vagrant
+categories: 
+  - tech
 type: page
 ---
 

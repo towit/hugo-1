@@ -9,6 +9,7 @@ tags = [
   "go",
   "travis"
 ]
+categories = ["tech"]
 image = ""
 menu = ""
 date = "2016-11-17T16:12:18+08:00"

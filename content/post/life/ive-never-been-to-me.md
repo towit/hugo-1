@@ -7,7 +7,7 @@ tags:
   - 音乐
 id: 89
 categories:
-  - 音乐
+  - life
 date: 2016-03-10T14:54:15+08:00
 type: page
 ---

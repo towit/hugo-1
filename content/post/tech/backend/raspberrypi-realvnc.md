@@ -12,6 +12,7 @@ tags = [
   "raspberrypi",
   "vnc",
 ]
+categories = ["tech"]
 type = "page"
 +++
 

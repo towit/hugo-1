@@ -9,7 +9,7 @@ tags:
   - WordPress
 id: 23
 categories:
-  - 技术
+  - tech
 date: 2015-07-04T19:56:52+08:00
 type: page
 ---
