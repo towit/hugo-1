@@ -9,4 +9,4 @@ comments = false
 type = "_default"
 +++
 
-关于我吖
+一枚前端、吃货而且还有点宅。

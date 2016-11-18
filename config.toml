@@ -24,7 +24,7 @@ PygmentsCodeFences = true
   # authorwebsite = "https://miaocode.tk"
   # bio= "my bio"
   logo = "images/mzvast.png"
-  # googleAnalyticsUserID = "UA-79101-12"
+  googleAnalyticsUserID = "UA-87665383-1"
   # Optional RSS-Link, if not provided it defaults to the standard index.xml
   # RSSLink = "http://feeds.feedburner.com/..."
   githubName = "mzvast"
