@@ -1,8 +1,10 @@
 +++
 tags = [
   "kcp",
+  "kcptun",
   "shadowsocks",
-  "raspberrypi"
+  "raspberrypi",
+  "systemd"
 ]
 author = ""
 draft = false
@@ -19,11 +21,16 @@ image = ""
 +++
 电信和校园网出国线路经常会炸，慢的让人抓狂。Kcptun用来做P2P隧道加速效果显著，尤其适合看视频。本文以centos6和rasbian为例做一个过程梳理。
 <!--more-->
-# 环境
+## 本文涉及内容
+- kcptun服务端的搭建
+- kcptun客户端在树莓派上的搭建
+- kcptun客户端systemd自启脚本的使用
+
+## 环境
 - 搬瓦工512M/centos6
 - 树莓派3/rasbian-PIXEL
 
-# 服务端
+## 服务端
 推荐这款[一键安装脚本](http://www.jianshu.com/p/78420fad1481)
 ```bash
 $wget --no-check-certificate https://raw.githubusercontent.com/kuoruan/kcptun_installer/master/kcptun.sh
@@ -48,12 +55,12 @@ Kcptun 相关命令：
 
 注意！要把屏幕输出的json内容复制一下，后面会用到。
 
-# windows客户端
+## windows客户端
 首先说说windows的gui程序，先下载一个[配置kcptun的工具](https://github.com/dfdragon/kcptun_gclient/releases)，然后下载[kcptun主程序](https://github.com/xtaci/kcptun/releases)，打开工具，将屏幕输出的内容以json导入配置，设置下本地端口，启动即可。
 
 - 特别注意！ipv6地址在写时候要加`[...]`方括号
 
-# 树莓派客户端
+## 树莓派客户端
 从上面的主程序中找到arm_64bit的版本下载，解压到一个目录，假定为kcp。然后新建三个脚本，`start.sh`，`stop.sh`，`restart.sh`。
 内容如下：
 
@@ -77,10 +84,40 @@ Kcptun 相关命令：
     echo "Kcptun stoped."
     ```
 - restart.sh
-    ```
+    ```bash
     #!/bin/bash
     cd /root/kcptun/
     sh client-stop.sh
     echo "Restarting Kcptun..."
     sh client-start.sh
     ```
+
+## systemd自启服务脚本
+手动启动服务总不是个好办法，毕竟重启就得手动运行一遍，实在无聊。  
+
+- 新建一个文件/etc/systemd/system/kcptun.service内容如下
+
+    ```shell
+    [Unit]
+    Description=Kcptun Client Service
+    After=network.target
+    [Service]
+    Type=simple
+    User=nobody
+    ExecStart=< 上面的start.sh的主体部分(去掉shebang行)粘贴过来即可 >
+    [Install]
+    WantedBy=default.target
+    ```
+
+- 增加可执行权限  
+`sudo chmod +x  /etc/systemd/system/kcptun.service`
+- 测试运行  
+`sudo systemctl start kcptun.service`
+- 启用服务  
+`sudo systemctl daemon-reload && sudo systemctl enable kcptun.service`
+
+## 修订说明
+----------
+时间 | 说明  
+:----|:--------
+2016-11-23|增加systemd自启脚本

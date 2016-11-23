@@ -31,7 +31,7 @@ python的版本管理一直都挺麻烦的感觉，最近花时间研究了下�
   - Ubuntu/Debian:  
 
         ```bash
-          sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev 
+        sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev 
         libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
         ```
   - Fedora/CentOS/RHEL:  
@@ -63,7 +63,7 @@ eval "$(pyenv virtualenv-init -)"
 - 在3.5.2版本下创建名为flask的虚拟环境(这个flask的命名和上面那个目录名没有任何关系):  
 `pyenv virtualenv 3.5.2 flask`
 - 新建pyenv用于识别环境的文件(pyenv通过该文件识别这个目录的虚拟环境)：  
-`echo "flask"> .python-version`
+`echo "flask"> .python-version`  
 此时可以看到命令提示符前出现了`(flask)`的标识，说明现在的环境与系统环境隔离了
 - 安装Flask包
 `pip install Flask`
@@ -82,7 +82,8 @@ eval "$(pyenv virtualenv-init -)"
     if __name__ == "__main__":
         app.run()
     ```
-回车,ctrl+D,运行`python app.py`可以看到程序正常运行了
+回车,ctrl+D
+- 运行`python app.py`可以看到程序正常运行了
 
 ## 后记
 这样一来在linux系统上的python版本管理问题是解决了，而且使用起来跟nvm特别接近，但在windows环境并不能用这个程序，有待进一步探索。

@@ -360,15 +360,15 @@ pre {
     box-sizing: border-box;
     margin: 0 0 1.75em 0;    
     width: 100%;
-    padding:0 2rem;
+    padding:0 1rem;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.9em;
-    white-space: pre;
+    /*white-space: pre;*/
     overflow: auto;
     /* background: #F7FAFB; */
     background: rgba(255, 192, 203, 0.23);
     border: #ff3f87 dashed 0.05rem;
-    border-radius: 0.5rem;    
+    border-radius: 0.3rem;    
 }
 
 pre code, pre tt {
