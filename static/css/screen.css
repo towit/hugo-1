@@ -367,8 +367,8 @@ pre {
     overflow: auto;
     /* background: #F7FAFB; */
     background: rgba(255, 192, 203, 0.23);
-    border: #ff3f87 dashed 0.25rem;
-    border-radius: 1rem;    
+    border: #ff3f87 dashed 0.05rem;
+    border-radius: 0.5rem;    
 }
 
 pre code, pre tt {
