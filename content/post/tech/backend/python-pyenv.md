@@ -90,6 +90,15 @@ eval "$(pyenv virtualenv-init -)"
 回车,ctrl+D
 - 运行`python app.py`可以看到程序正常运行了
 
+## shell环境下使用virtualenv
+- 上面介绍的是用.python-version文件的方式让shell自动识别当前目录所在环境。假如想手动切换当前shell所用的virtualenv该怎么操作呢？  
+
+    ```bash
+    #pyenv shell < virtualenv NAME 或者system >
+    pyenv shell flask #切换到名为flask的virtualenv
+    pyenv shell system #切换到系统默认的环境
+    ```
+
 ## 后记
 这样一来在linux系统上的python版本管理问题是解决了，而且使用起来跟nvm特别接近，但在windows环境并不能用这个程序，有待进一步探索。
 ## 参考
