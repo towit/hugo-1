@@ -60,6 +60,11 @@ eval "$(pyenv virtualenv-init -)"
 `mkdir -p pythonProject/flask&&cd pythonProject/flask`
 - 安装3.5.2版本python:  
 `pyenv install 3.5.2`
+    - 注意：在proxychains4代理的情况下若在ipv6网络中安装后面的python可能会报错  
+`You must get working getaddrinfo() function. or you can specify "--disable-ipv6". getaddrinfo() `
+    - 解决方法  
+    在命令前加上代理地址，例如  
+    `http_proxy=127.0.0.1:1080 pyenv install 3.5.2`
 - 在3.5.2版本下创建名为flask的虚拟环境(这个flask的命名和上面那个目录名没有任何关系):  
 `pyenv virtualenv 3.5.2 flask`
 - 新建pyenv用于识别环境的文件(pyenv通过该文件识别这个目录的虚拟环境)：  
