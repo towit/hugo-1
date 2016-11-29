@@ -28,14 +28,19 @@ date = "2016-11-29T11:32:25+08:00"
 
 ## 安装conda
 - 这里仅安装包管理器[miniconda](http://conda.pydata.org/miniconda.html)，而不是400MB+的conda(包含n多科学计算库)
-- miniconda版本的选择并不特别重要，因为conda可以以项目为单位，安装多个python版本，并在之间切换。这里以安装[自带Python 3.5的版本](https://repo.continuum.io/miniconda/Miniconda3-latest-Windows-x86_64.exe)为例
+- miniconda版本的选择并不特别重要，因为conda可以以项目为单位，分别安装python版本，并在之间切换。这里以安装[自带Python 2.7的版本](https://repo.continuum.io/miniconda/Miniconda2-latest-Windows-x86_64.exe)为例。也是考虑到linux下系统自带也是2.x版本的。
 
 ## 基本使用，以创建flask项目为例
 - 创建环境，并安装flask包
 
     ```bash
     #conda create --name <env名称> <要安装的包(可选),空格分隔>  
+
+    #基于当前全局python版本产生新环境，这跟virtualenv类似
     conda create --name my_app flask
+
+    #指定python版本为3.x系列，conda自动下载并安装python3的最新版本，这点跟pyenv类似
+    conda create --name python=3 my_app flask
     ```  
 
 - 激活/退出该环境
