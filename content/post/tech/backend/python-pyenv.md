@@ -70,7 +70,7 @@ eval "$(pyenv virtualenv-init -)"
 - 新建pyenv用于识别环境的文件(pyenv通过该文件识别这个目录的虚拟环境)：  
 `echo "flask"> .python-version`  
 此时可以看到命令提示符前出现了`(flask)`的标识，说明现在的环境与系统环境隔离了
-- 安装Flask包
+- 安装Flask包  
 `pip install Flask`
 - 新建flask demo主程序
 `cat >app.py`
@@ -89,7 +89,8 @@ eval "$(pyenv virtualenv-init -)"
     ```
 回车,ctrl+D
 - 运行`python app.py`可以看到程序正常运行了
-
+- 卸载某virtualenv  
+`pyenv uninstall flask`
 ## shell环境下使用virtualenv
 - 上面介绍的是用.python-version文件的方式让shell自动识别当前目录所在环境。假如想手动切换当前shell所用的virtualenv该怎么操作呢？  
 
