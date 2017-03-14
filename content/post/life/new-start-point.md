@@ -8,7 +8,7 @@ draft = false
 title = "iOS写作测试"
 slug = "am-back"
 menu = ""
-image = ""
+image = "http://ogscovhkh.bkt.clouddn.com/workflow-IMG_0500.png"
 share = true
 date = "2017-03-15T22:52:02+08:00"
 type = "page"
@@ -17,13 +17,10 @@ tags = [
 ]
 
 +++
-来一点刺激的！
+结合多种工具实现在iOS写作工作流
 <!--more-->
-# 图床测试
-测试workflow和draft整合性
-下面就是见证奇迹的时刻，看好了，![](http://ogscovhkh.bkt.clouddn.com/workflow-IMG_0500.png)
+# 本文用到了如下软件
 
-本文其实用到了好几个软件  
 - Working copy(管理代码)
 - Editorial(编辑working copy中的文件)
 - Draft(运行javascript生成七牛云token)
