@@ -6,7 +6,7 @@ comments = true
 author = ""
 draft = false
 title = "iOS写作测试"
-slug = "am-back"
+slug = "ios-writing-test"
 menu = ""
 image = "http://ogscovhkh.bkt.clouddn.com/workflow-IMG_0500.png"
 share = true
@@ -17,9 +17,15 @@ tags = [
 ]
 
 +++
-结合多种工具实现在iOS写作工作流
+结合多种工具实现在iOS写作
 <!--more-->
-# 本文用到了如下软件
+## 意义
+之所以需要实现在iOS的写作。说来有好多原因，首先，相对于PC这种重的客户端来说，手机和平板似乎才是随时随地可以获得的，所谓的真正的移动互联网。
+
+## 问题描述
+markdown本身十分轻量，语法简练，最大的问题是多媒体的嵌入，这也是老大难了，关键问题是插入图片。我们需要托管图片，同时获取访问的链接。七牛云作为图床的首选，也正是因为其免费的10G存储，对于普通的博客绰绰有余。
+
+## 使用的软件介绍
 
 - Working copy(管理代码)
 - Editorial(编辑working copy中的文件)
