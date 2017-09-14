@@ -1,5 +1,5 @@
 +++
-date = "2014-07-11T10:54:24+02:00"
+date = {{ .Date }}
 draft = false
 title = "Post title"
 slug = "post-title"
@@ -12,3 +12,5 @@ menu= ""		# set "main" to add this content to the main menu
 author = ""
 type = "page"
 +++
+
+<!--more-->
