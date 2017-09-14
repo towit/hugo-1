@@ -96,10 +96,10 @@ before_install:
   - git submodule update --init --recursive
 
 install:
+  - export HUGO_VERSION=0.27.1
   - sudo pip install Pygments
-  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-  - tar xzf hugo_0.17_Linux-64bit.tar.gz
-  - mv hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 hugo
+  - wget https://github.com/spf13/hugo/releases/download/v$HUGO_VERSION/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - chmod a+x hugo
 
 script:
@@ -119,3 +119,4 @@ after_script:
 时间 | 说明  
 :----|:--------
 2016-11-19|修改Travis配置文件中hugo的下载方式，确保版本为0.17，同时加快构建速度到20秒。
+2017-09-14|更新Travis配置文件中hugo版本。
