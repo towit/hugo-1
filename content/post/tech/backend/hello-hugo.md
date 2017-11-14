@@ -25,7 +25,7 @@ type = "page"
 - Travis CI配置
 
 ## 环境介绍
-- win10x64 一周年纪念版
+- win10x64 一周年纪念版及更新版本
 - [chocolatey](https://chocolatey.org)包管理器
 - [GitBash](https://git-scm.com/downloads)
 - Python 2.7+或3.5+
@@ -33,7 +33,7 @@ type = "page"
 ## Hugo的安装
 [hugo](https://gohugo.io/)的安装很简单，管理员权限下输入该命令：
 ```
-choco install -y golang hugo
+choco install -y hugo
 ```
 基本的hugo命令可以参考官网的[快速上手](https://gohugo.io/overview/quickstart/)，详解hugo的话又可以单独开篇文章了，本文的重点是自动化部署，赶紧进入重点。
 
@@ -68,8 +68,11 @@ PygmentsCodeFences = true
 我做了个直观易懂的配置，基本都是常见命令。云端构建一次平均20多秒。
 直接上配置文件`travis.yml`：
 
-- 注意要先生成好GH_TOKEN并加入到Travis的环境变量里去：
-- 注意直接用go get < github url >的方式下载到的不是稳定版，为了和本地环境一致（0.17版本），需要用下载编译后可执行文件的方式。
+- 注意要先生成GH_TOKEN[(官方教程链接)](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/)。也就是在下图所示页面生成一个token：![](http://ogscovhkh.bkt.clouddn.com/Picorz-pasteshot--2017-11-14T23:43:35+08:00)
+- 然后把这个token添加到[Travis](https://travis-ci.org/)的环境变量里去。如下图所示
+![](http://ogscovhkh.bkt.clouddn.com/Picorz-pasteshot--2017-11-14T23:50:39+08:00)
+![](http://ogscovhkh.bkt.clouddn.com/Picorz-pasteshot--2017-11-14T23:48:23+08:00)。
+- 最后简单介绍构建脚本的编写[(构建的生命周期)](https://docs.travis-ci.com/user/customizing-the-build/#The-Build-Lifecycle)。由于直接用go get < github url >的方式下载到的不是稳定版，为了和本地环境一致，需要用下载编译后可执行文件的方式，并可以指定版本号。因此，并不需要CI安装了go语言。
 
 ``` bash
 language: go
@@ -96,7 +99,7 @@ before_install:
   - git submodule update --init --recursive
 
 install:
-  - export HUGO_VERSION=0.27.1
+  - export HUGO_VERSION=0.30.2
   - sudo pip install Pygments
   - wget https://github.com/spf13/hugo/releases/download/v$HUGO_VERSION/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
   - tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
@@ -118,5 +121,6 @@ after_script:
 ----------
 时间 | 说明  
 :----|:--------
+2017-11-15|增加插图，更新部分说明性内容。
 2016-11-19|修改Travis配置文件中hugo的下载方式，确保版本为0.17，同时加快构建速度到20秒。
 2017-09-14|更新Travis配置文件中hugo版本。
