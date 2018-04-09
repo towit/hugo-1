@@ -27,6 +27,7 @@ type = "page"
 ```css
 div{
     overflow: 'hidden',
+    whiteSpace: 'nowrap',
     textOverflow: 'ellipsis'
 }
 ```
