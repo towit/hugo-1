@@ -1,4 +1,4 @@
-baseurl = "https://miaocode.tk/"
+baseurl = "/"
 title = "喵扣|MiaoCode"
 languageCode = "en-us"
 theme = "casper"
