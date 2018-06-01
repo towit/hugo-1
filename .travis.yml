@@ -9,7 +9,7 @@ branches:
 
 env:
  global:
-   - GH_REF: github.com/mzvast/mzvast.github.io.git
+   - GH_REF: github.com/fydy/hugo.git
 
 
 sudo: required
@@ -35,8 +35,8 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "mzvast"
-  - git config user.email "mzvast@gmail.com"
+  - git config user.name "fydy"
+  - git config user.email "edu@yuns.me"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
