@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/categories/life/</link>
+    <description>Recent content in Life on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Thu, 14 Sep 2017 21:56:01 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>探寻迷失的心</title>
+      <link>https://luolvshi.me/hugo/find-my-lost-heart-20170910/</link>
+      <pubDate>Thu, 14 Sep 2017 21:56:01 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/find-my-lost-heart-20170910/</guid>
+      <description>&lt;p&gt;九月，午后，依然闷热。并无异样的宅的周末，不同的是一个偶然的想法，如果不按消遣来度过，而去做一些平时很少做的事，会不会有不同感受。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iOS写作测试</title>
+      <link>https://luolvshi.me/hugo/ios-writing-test/</link>
+      <pubDate>Wed, 15 Mar 2017 22:52:02 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/ios-writing-test/</guid>
+      <description>&lt;p&gt;结合多种工具实现在iOS写作
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ve never been to me</title>
+      <link>https://luolvshi.me/hugo/ive-never-been-to-me/</link>
+      <pubDate>Thu, 10 Mar 2016 14:54:15 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/ive-never-been-to-me/</guid>
+      <description>&lt;p&gt;寻找记忆中的那首歌，探寻记忆中的感动，感受生活的不期而遇的惊喜……
+《I&amp;rsquo;ve never been to me》《杜拉拉追婚记》《我可能不会爱你》《因为是女子》
+
+最近埋头倒腾drupal，陷入头疼状态，3月7日，偶然打开电影《杜拉拉追婚记》。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>时间遇上空间</title>
+      <link>https://luolvshi.me/hugo/time-and-space/</link>
+      <pubDate>Wed, 29 Jul 2015 17:02:50 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/time-and-space/</guid>
+      <description>&lt;!-- [![拥挤的推送](http://www.miaocode.tk/wp-content/uploads/2015/07/image-169x300.jpg)](http://www.miaocode.tk/wp-content/uploads/2015/07/image.jpg) --&gt;
+
+&lt;p&gt;大数据时代，每天上百个推送，重要性一样的情况下，等同于垃圾，我是不会去看的。
+移动互联网的重点似乎不是在于关注什么，而是不关注什么。所以，胡乱屏蔽之后似乎又回到了没有网络的时代。
+
+如何让推送更有意义？这是一个很大的课题。
+要想解决这个问题，首先得明确什么对你才是重要的？这也是一个很大的课题。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

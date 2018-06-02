@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/centos/</link>
+    <description>Recent content in Centos on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Sun, 05 Jul 2015 15:46:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WordPress ip站点迁移到域名站点过程</title>
+      <link>https://luolvshi.me/hugo/wordpress-ip-site-to-www/</link>
+      <pubDate>Sun, 05 Jul 2015 15:46:29 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/wordpress-ip-site-to-www/</guid>
+      <description>&lt;p&gt;注册域名以及绑定DNS记录的体验。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程</title>
+      <link>https://luolvshi.me/hugo/centos6-vps-wordpress/</link>
+      <pubDate>Sat, 04 Jul 2015 19:56:52 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/centos6-vps-wordpress/</guid>
+      <description>&lt;p&gt;搭建环境：搬瓦工512M，5G。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

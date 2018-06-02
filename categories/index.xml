@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/categories/</link>
+    <description>Recent content in Categories on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    
+	<atom:link href="https://luolvshi.me/hugo/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Life</title>
+      <link>https://luolvshi.me/hugo/categories/life/</link>
+      <pubDate>Thu, 14 Sep 2017 21:56:01 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://luolvshi.me/hugo/categories/tech/</link>
+      <pubDate>Mon, 09 Apr 2018 12:49:19 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/categories/tech/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

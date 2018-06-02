@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/windows/</link>
+    <description>Recent content in Windows on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Sun, 19 Mar 2017 19:54:24 +0200</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>markdown图床工具Picorz</title>
+      <link>https://luolvshi.me/hugo/markdown-image-tool-picorz/</link>
+      <pubDate>Sun, 19 Mar 2017 19:54:24 +0200</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/markdown-image-tool-picorz/</guid>
+      <description>&lt;p&gt;基于electron开发了这款图床小工具
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>win10 移除通知中心列表中已卸载的app图标</title>
+      <link>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</link>
+      <pubDate>Thu, 01 Dec 2016 23:17:00 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</guid>
+      <description>&lt;p&gt;windows10的通知中心中的app列表会随着时间的推移而越来越长，windows并不会自动去检测这些项目是否已经卸载了。有些黑漆漆的图标看着真的很不爽，尤其是具有强迫症的人，更是如此，今天就让我研究了半天，终于找到的解决方案。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>cmder设置当前活动页utf8编码，完美解决进度条乱码</title>
+      <link>https://luolvshi.me/hugo/chcp-utf8/</link>
+      <pubDate>Tue, 29 Nov 2016 12:26:23 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/chcp-utf8/</guid>
+      <description>&lt;p&gt;众所周知windows的终端有各种各样的问题，其中默认的字符编码在中文系统中是GBK，因此一些进度条会显示不正常。包括yarn，ssh等都会受到影响。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程"/>
+<meta name="twitter:description" content="搭建环境：搬瓦工512M，5G。
+"/>
+
+
+
+  	<meta property="og:title" content=" CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程 &middot;  云溪部落" />
+  	<meta property="og:site_name" content="云溪部落" />
+  	<meta property="og:url" content="https://luolvshi.me/hugo/centos6-vps-wordpress/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2015-07-04T19:56:52&#43;08:00" />
+
+    
+    <meta property="og:article:tag" content="CentOS" />
+    
+    <meta property="og:article:tag" content="FTP" />
+    
+    <meta property="og:article:tag" content="LNMP" />
+    
+    <meta property="og:article:tag" content="VPS" />
+    
+    <meta property="og:article:tag" content="WordPress" />
+    
+    
+
+    <title>
+       CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程 &middot;  云溪部落
+    </title>
+
+    <meta name="description" content="代码会唱歌" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://luolvshi.me/hugo/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://luolvshi.me/hugo/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://luolvshi.me/hugo/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://luolvshi.me/hugo/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://luolvshi.me/hugo/index.xml" rel="alternate" type="application/rss+xml" title="云溪部落" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.38.1" />
+
+    <link rel="canonical" href="https://luolvshi.me/hugo/centos6-vps-wordpress/" />
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/tags/">Tags</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/categories/">Categories</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/about/">About</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://luolvshi.me/hugo/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav overlay clearfix">
+
+
+      
+        <a class="blog-logo" href="https://luolvshi.me/hugo/"><img src="https://luolvshi.me/hugo/images/mzvast.png" alt="Home" /></a>
+      
+      
+          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+      
+    </nav>
+
+    
+
+
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+    <header class="post-header">
+      <nav class="breadcrumb">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </nav>
+
+
+        <h1 class="post-title">CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2015-07-04T19:56:52&#43;08:00">
+            Jul 4, 2015
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/centos/">#CentOS</a></span>
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/ftp/">#FTP</a></span>
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/lnmp/">#LNMP</a></span>
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/vps/">#VPS</a></span>
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/wordpress/">#WordPress</a></span>
+         
+         
+          <span class="post-category"><a href="https://luolvshi.me/hugo/categories/tech/">#tech</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+
+
+<p>搭建环境：搬瓦工512M，5G。
+</p>
+
+<p>主要步骤：</p>
+
+<ol>
+<li>安装LNMP</li>
+<li>创建数据库</li>
+<li>添加虚拟主机</li>
+<li>安装WordPress</li>
+<li>配置和权限</li>
+</ol>
+
+<p>以下是具体过程</p>
+
+<h2 id="安装lnmp和ftp">安装LNMP和FTP</h2>
+
+<p>LNMP（linux+Nginx+MySQL+PHP），一键安装包<a href="http://lnmp.org/install.html" title="LNMP一键安装">http://lnmp.org/install.html</a>按照该教程指导进行安装。</p>
+
+<p>首先，推荐使用Xshell作为终端连接VPS（考虑到putty每次登陆都要输入密码，非常的麻烦）</p>
+
+<p>登陆后运行：</p>
+
+<pre><code>screen -S lnmp #创建一个不会被打断的“后台”
+</code></pre>
+
+<p>screen常用命令有：</p>
+
+<pre><code>screen -S name  #创建名为name的屏幕
+(ctrl+a)+d  #暂时中断会话
+screen -ls  #显示会话和ID
+screen -r num   #继续ID为num的会话
+</code></pre>
+
+<p>安装LNMP执行：</p>
+
+<pre><code>wget -c http://soft.vpser.net/lnmp/lnmp1.2-full.tar.gz
+tar zxf lnmp1.2-full.tar.gz
+cd lnmp1.2-full
+./install.sh lnmp
+</code></pre>
+
+<p>期间需要设置：</p>
+
+<ul>
+<li>MySQL密码（回车默认为root）</li>
+<li>是否启用MySQL InnoDB（n回车）</li>
+<li>MySQL版本号（默认回车）</li>
+<li>PHP版本号（默认回车）</li>
+<li>内存优化其（默认回车不安装）</li>
+<li>提示&rdquo;Press any key to install&hellip;or Press Ctrl+c to cancel&rdquo;后，按（回车开始安装）。</li>
+</ul>
+
+<p>等待大约30分钟……安装成功</p>
+
+<p>然后执行安装FTP：</p>
+
+<pre><code>./pureftpd.sh 
+</code></pre>
+
+<h2 id="创建数据库">创建数据库</h2>
+
+<p>浏览器访问<code>[你的ip]/phpmyadmin</code>进入数据库管理后台，新建数据库wordpress</p>
+
+<h2 id="添加虚拟主机">添加虚拟主机</h2>
+
+<p>运行：</p>
+
+<pre><code>lnmp vhost add
+</code></pre>
+
+<ul>
+<li>域名设置：这里暂时用[你的ip]，</li>
+<li>是否还要添加域名：no</li>
+<li>设置网站目录:回车</li>
+<li>是否开启伪静态：y回车</li>
+<li>伪静态类型：wordpress回车</li>
+<li>是否开启log功能：y回车</li>
+<li>回车开始安装</li>
+</ul>
+
+<p>因为添加vhost导致“路由”的改变，此时已经不能通过<code>[你的ip]/phpmyadmin</code>访问数据库后台了。所以要把phpmyAdmin和pureFTPd、探针等文件复制到<code>/home/wwwroot/[你的ip]</code>下面，为了安全记得把phpmyAdmin改一个名字</p>
+
+<h2 id="安装wordpress">安装WordPress</h2>
+
+<p>PS:当前在~路径下操作</p>
+
+<p>运行命令：</p>
+
+<pre><code>wget -c https://cn.wordpress.org/wordpress-4.2.2-zh_CN.tar.gz
+tar zxvf wordpress-4.2.2-zh_CN.tar.gz
+</code></pre>
+
+<p>权限设置：</p>
+
+<pre><code>chown -R www:www wordpress
+</code></pre>
+
+<p>复制到nginx目录：</p>
+
+<pre><code>cp -R wordpress/* /home/wwwroot/[你的ip]
+</code></pre>
+
+<p>（PS：默认情况nginx根目录是：/home/wwwroot/default/，添加vhost以后已经将你的ip绑定到/home/wwwroot/[你的ip]下面）</p>
+
+<p>访问[你的ip]按照向导安装WordPress即可</p>
+
+<h2 id="配置和权限">配置和权限</h2>
+
+<p>不进行这一步的话在插件安装和更新上会遇到问题。</p>
+
+<blockquote>
+<p>登陆phpMyAdmin如果提示无法读取目录、超时或报502 Bad Gateway错误。需要修改/home/wwwroot/[你的ip]/.user.in将里面的内容删除，重启ftp服务生效。</p>
+</blockquote>
+
+<p>由于.user.ini文件无法直接修改（设置了特殊属性，查看属性<code>lsattr .user.ini</code>）</p>
+
+<p>修改前需要执行：</p>
+
+<pre><code>chattr -i .user.ini
+</code></pre>
+
+<p>修改完成后再执行：</p>
+
+<pre><code>chattr +i .user.ini
+</code></pre>
+
+<blockquote>
+<p>插件升级提示&rdquo;要执行请求的操作，WordPress需要访问您网页服务器的权限。请输入您的FTP登陆凭据以继续&rdquo;并且报错比如无法读取wp-content等等，那么需要执行权限设置操作。</p>
+</blockquote>
+
+<p>在wp-config.php文件中添加以下内容</p>
+
+<pre><code>define(&quot;FS_METHOD&quot;,&quot;direct&quot;);
+define(&quot;FS_CHMOD_DIR&quot;, 0777);
+define(&quot;FS_CHMOD_FILE&quot;, 0777);
+</code></pre>
+
+<h2 id="鸣谢">鸣谢</h2>
+
+<p><a href="http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html">http://jingyan.baidu.com/article/4f34706efc1237e387b56da4.html</a></p>
+
+<p><a href="http://www.mengjx.com/setup-lnmp-environment-and-install-wordpress-in-centos.html">http://www.mengjx.com/setup-lnmp-environment-and-install-wordpress-in-centos.html</a></p>
+
+<p><a href="http://blog.csdn.net/fox64194167/article/details/33333301">http://blog.csdn.net/fox64194167/article/details/33333301</a></p>
+
+
+
+
+
+
+
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://luolvshi.me/hugo/" style="background-image: url(https://luolvshi.me/hugo/images/mzvast.png)"><span class="hidden">Nick Wong's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://luolvshi.me/hugo/">Nick Wong</a></h4>
+  
+  <p>The most funny man in the world.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Shanghai, China</span>
+    <span class="author-link icon-link"><a href="https://miaocode.tk">https://miaocode.tk</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this page</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=CentOS6%20VPS%e5%ae%89%e8%a3%85LNMP%2bWordPress%20ip%e5%bb%ba%e7%ab%99%e5%85%a8%e8%bf%87%e7%a8%8b&nbsp;-&nbsp;%e4%ba%91%e6%ba%aa%e9%83%a8%e8%90%bd&amp;url=https%3a%2f%2fluolvshi.me%2fhugo%2fcentos6-vps-wordpress%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fluolvshi.me%2fhugo%2fcentos6-vps-wordpress%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fluolvshi.me%2fhugo%2fcentos6-vps-wordpress%2f&amp;description=CentOS6%20VPS%e5%ae%89%e8%a3%85LNMP%2bWordPress%20ip%e5%bb%ba%e7%ab%99%e5%85%a8%e8%bf%87%e7%a8%8b"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fluolvshi.me%2fhugo%2fcentos6-vps-wordpress%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+<aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://luolvshi.me/hugo/wordpress-ip-site-to-www/">
+          <section class="post">
+              <h2>WordPress ip站点迁移到域名站点过程</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">云溪部落</a> All rights reserved - 2018</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/jquery.js"></script>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/index.js"></script>
+    
+</body>
+</html>
+

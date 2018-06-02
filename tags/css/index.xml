@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/css/</link>
+    <description>Recent content in Css on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 12:49:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于文本缩略</title>
+      <link>https://luolvshi.me/hugo/js-css-text-overflow/</link>
+      <pubDate>Mon, 09 Apr 2018 12:49:19 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/js-css-text-overflow/</guid>
+      <description>&lt;p&gt;有时候需要对超过尺寸的文本进行缩略，JS 和 CSS 各自的缩略方法有哪些？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

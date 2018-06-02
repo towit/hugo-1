@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>云溪部落</title>
+    <link>https://luolvshi.me/hugo/</link>
+    <description>Recent content on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Mon, 09 Apr 2018 12:49:19 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于文本缩略</title>
+      <link>https://luolvshi.me/hugo/js-css-text-overflow/</link>
+      <pubDate>Mon, 09 Apr 2018 12:49:19 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/js-css-text-overflow/</guid>
+      <description>&lt;p&gt;有时候需要对超过尺寸的文本进行缩略，JS 和 CSS 各自的缩略方法有哪些？&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>探寻迷失的心</title>
+      <link>https://luolvshi.me/hugo/find-my-lost-heart-20170910/</link>
+      <pubDate>Thu, 14 Sep 2017 21:56:01 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/find-my-lost-heart-20170910/</guid>
+      <description>&lt;p&gt;九月，午后，依然闷热。并无异样的宅的周末，不同的是一个偶然的想法，如果不按消遣来度过，而去做一些平时很少做的事，会不会有不同感受。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>spring-boot开启livereload</title>
+      <link>https://luolvshi.me/hugo/spring-boot-livereload/</link>
+      <pubDate>Wed, 22 Mar 2017 10:54:24 +0200</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/spring-boot-livereload/</guid>
+      <description>&lt;p&gt;关于开启spring boot devtools的livereload的功能。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>markdown图床工具Picorz</title>
+      <link>https://luolvshi.me/hugo/markdown-image-tool-picorz/</link>
+      <pubDate>Sun, 19 Mar 2017 19:54:24 +0200</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/markdown-image-tool-picorz/</guid>
+      <description>&lt;p&gt;基于electron开发了这款图床小工具
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>iOS写作测试</title>
+      <link>https://luolvshi.me/hugo/ios-writing-test/</link>
+      <pubDate>Wed, 15 Mar 2017 22:52:02 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/ios-writing-test/</guid>
+      <description>&lt;p&gt;结合多种工具实现在iOS写作
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>重新审视bash on ubuntu on windows</title>
+      <link>https://luolvshi.me/hugo/about-wsl/</link>
+      <pubDate>Wed, 07 Dec 2016 22:52:02 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/about-wsl/</guid>
+      <description>&lt;p&gt;最近倒腾bash on windows，记录一些自己的看法。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>win10 移除通知中心列表中已卸载的app图标</title>
+      <link>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</link>
+      <pubDate>Thu, 01 Dec 2016 23:17:00 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</guid>
+      <description>&lt;p&gt;windows10的通知中心中的app列表会随着时间的推移而越来越长，windows并不会自动去检测这些项目是否已经卸载了。有些黑漆漆的图标看着真的很不爽，尤其是具有强迫症的人，更是如此，今天就让我研究了半天，终于找到的解决方案。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>proxychains-ng ipv6 错误的解决方案</title>
+      <link>https://luolvshi.me/hugo/proxychains-ng-ipv6-error/</link>
+      <pubDate>Tue, 29 Nov 2016 22:19:14 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/proxychains-ng-ipv6-error/</guid>
+      <description>&lt;p&gt;当用pyenv在代理的情况下安装python的时候可能会报错，说是You must get working getaddrinfo() function. or you can specify &amp;ldquo;&amp;ndash;disable-ipv6&amp;rdquo;. getaddrinfo()
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>cmder设置当前活动页utf8编码，完美解决进度条乱码</title>
+      <link>https://luolvshi.me/hugo/chcp-utf8/</link>
+      <pubDate>Tue, 29 Nov 2016 12:26:23 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/chcp-utf8/</guid>
+      <description>&lt;p&gt;众所周知windows的终端有各种各样的问题，其中默认的字符编码在中文系统中是GBK，因此一些进度条会显示不正常。包括yarn，ssh等都会受到影响。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>python版本管理之conda</title>
+      <link>https://luolvshi.me/hugo/python-conda/</link>
+      <pubDate>Tue, 29 Nov 2016 11:32:25 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/python-conda/</guid>
+      <description>&lt;p&gt;之前提到过windows下没有pyenv这等神器，但是我们有conda，这也是一款功能强大的作品！
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python版本管理之pyenv</title>
+      <link>https://luolvshi.me/hugo/python-pyenv/</link>
+      <pubDate>Wed, 23 Nov 2016 21:21:57 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/python-pyenv/</guid>
+      <description>&lt;p&gt;python的版本管理一直都挺麻烦的感觉，最近花时间研究了下，发现个pyenv这个神器，相当于node的nvm，用起来非常熟悉。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>树莓派遇上kcptun</title>
+      <link>https://luolvshi.me/hugo/hello-kcp/</link>
+      <pubDate>Sat, 19 Nov 2016 19:10:18 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/hello-kcp/</guid>
+      <description>&lt;p&gt;电信和校园网出国线路经常会炸，慢的让人抓狂。Kcptun用来做P2P隧道加速效果显著，尤其适合看视频。本文以centos6和rasbian为例做一个过程梳理。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo借助Travis CI实现GitHub Pages自动部署实践</title>
+      <link>https://luolvshi.me/hugo/hello-hugo-and-more/</link>
+      <pubDate>Thu, 17 Nov 2016 16:12:18 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/hello-hugo-and-more/</guid>
+      <description>&lt;p&gt;这两天把博客从hexo转移到了hugo，并实现了自动化构建，借此机会趁热打铁把过程记录一下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>raspberrypi realvnc</title>
+      <link>https://luolvshi.me/hugo/raspberrypi-realvnc/</link>
+      <pubDate>Wed, 16 Nov 2016 21:42:46 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/raspberrypi-realvnc/</guid>
+      <description>&lt;p&gt;在树莓派9月更新raspbian代号为PIXEL系统之后，集成了对realvnc的支持，其中有一些坑，值得注意！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://luolvshi.me/hugo/about/</link>
+      <pubDate>Wed, 16 Nov 2016 18:55:38 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/about/</guid>
+      <description>一枚前端、吃货而且还有点宅。</description>
+    </item>
+    
+    <item>
+      <title>angularJS 1.5 component与ui-router的结合</title>
+      <link>https://luolvshi.me/hugo/angular-component-ui-router/</link>
+      <pubDate>Sun, 28 Aug 2016 03:19:22 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/angular-component-ui-router/</guid>
+      <description>&lt;p&gt;AngularJS team将Component从2.0反向移植到1.5版本已经有一阵子了。在实际项目中由于主要采用MVVM模式，导致封装性欠佳。近日，脑洞大开，研究了以后决定局部实验。本文主要记录在angular-ui-router中渐进引入1.5版本component元件的一些过程。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ve never been to me</title>
+      <link>https://luolvshi.me/hugo/ive-never-been-to-me/</link>
+      <pubDate>Thu, 10 Mar 2016 14:54:15 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/ive-never-been-to-me/</guid>
+      <description>&lt;p&gt;寻找记忆中的那首歌，探寻记忆中的感动，感受生活的不期而遇的惊喜……
+《I&amp;rsquo;ve never been to me》《杜拉拉追婚记》《我可能不会爱你》《因为是女子》
+
+最近埋头倒腾drupal，陷入头疼状态，3月7日，偶然打开电影《杜拉拉追婚记》。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>时间遇上空间</title>
+      <link>https://luolvshi.me/hugo/time-and-space/</link>
+      <pubDate>Wed, 29 Jul 2015 17:02:50 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/time-and-space/</guid>
+      <description>&lt;!-- [![拥挤的推送](http://www.miaocode.tk/wp-content/uploads/2015/07/image-169x300.jpg)](http://www.miaocode.tk/wp-content/uploads/2015/07/image.jpg) --&gt;
+
+&lt;p&gt;大数据时代，每天上百个推送，重要性一样的情况下，等同于垃圾，我是不会去看的。
+移动互联网的重点似乎不是在于关注什么，而是不关注什么。所以，胡乱屏蔽之后似乎又回到了没有网络的时代。
+
+如何让推送更有意义？这是一个很大的课题。
+要想解决这个问题，首先得明确什么对你才是重要的？这也是一个很大的课题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker初体验</title>
+      <link>https://luolvshi.me/hugo/docker-on-windows-experience/</link>
+      <pubDate>Wed, 08 Jul 2015 08:26:07 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/docker-on-windows-experience/</guid>
+      <description>&lt;p&gt;主要介绍windows平台中的一些体验
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vagrant初体验</title>
+      <link>https://luolvshi.me/hugo/vagrant-experience/</link>
+      <pubDate>Tue, 07 Jul 2015 13:26:00 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/vagrant-experience/</guid>
+      <description>&lt;p&gt;首先需要下载&lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;vagrantup&lt;/a&gt;和&lt;a href=&#34;https://www.virtualbox.org/&#34;&gt;virtualbox&lt;/a&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WordPress ip站点迁移到域名站点过程</title>
+      <link>https://luolvshi.me/hugo/wordpress-ip-site-to-www/</link>
+      <pubDate>Sun, 05 Jul 2015 15:46:29 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/wordpress-ip-site-to-www/</guid>
+      <description>&lt;p&gt;注册域名以及绑定DNS记录的体验。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOS6 VPS安装LNMP&#43;WordPress ip建站全过程</title>
+      <link>https://luolvshi.me/hugo/centos6-vps-wordpress/</link>
+      <pubDate>Sat, 04 Jul 2015 19:56:52 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/centos6-vps-wordpress/</guid>
+      <description>&lt;p&gt;搭建环境：搬瓦工512M，5G。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

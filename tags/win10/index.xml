@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Win10 on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/win10/</link>
+    <description>Recent content in Win10 on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Thu, 01 Dec 2016 23:17:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/win10/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>win10 移除通知中心列表中已卸载的app图标</title>
+      <link>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</link>
+      <pubDate>Thu, 01 Dec 2016 23:17:00 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/</guid>
+      <description>&lt;p&gt;windows10的通知中心中的app列表会随着时间的推移而越来越长，windows并不会自动去检测这些项目是否已经卸载了。有些黑漆漆的图标看着真的很不爽，尤其是具有强迫症的人，更是如此，今天就让我研究了半天，终于找到的解决方案。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

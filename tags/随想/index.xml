@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>随想 on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/%E9%9A%8F%E6%83%B3/</link>
+    <description>Recent content in 随想 on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Wed, 29 Jul 2015 17:02:50 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/%E9%9A%8F%E6%83%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>时间遇上空间</title>
+      <link>https://luolvshi.me/hugo/time-and-space/</link>
+      <pubDate>Wed, 29 Jul 2015 17:02:50 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/time-and-space/</guid>
+      <description>&lt;!-- [![拥挤的推送](http://www.miaocode.tk/wp-content/uploads/2015/07/image-169x300.jpg)](http://www.miaocode.tk/wp-content/uploads/2015/07/image.jpg) --&gt;
+
+&lt;p&gt;大数据时代，每天上百个推送，重要性一样的情况下，等同于垃圾，我是不会去看的。
+移动互联网的重点似乎不是在于关注什么，而是不关注什么。所以，胡乱屏蔽之后似乎又回到了没有网络的时代。
+
+如何让推送更有意义？这是一个很大的课题。
+要想解决这个问题，首先得明确什么对你才是重要的？这也是一个很大的课题。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

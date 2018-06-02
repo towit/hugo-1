@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Terminal on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/terminal/</link>
+    <description>Recent content in Terminal on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 12:26:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cmder设置当前活动页utf8编码，完美解决进度条乱码</title>
+      <link>https://luolvshi.me/hugo/chcp-utf8/</link>
+      <pubDate>Tue, 29 Nov 2016 12:26:23 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/chcp-utf8/</guid>
+      <description>&lt;p&gt;众所周知windows的终端有各种各样的问题，其中默认的字符编码在中文系统中是GBK，因此一些进度条会显示不正常。包括yarn，ssh等都会受到影响。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

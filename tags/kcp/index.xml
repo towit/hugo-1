@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kcp on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/kcp/</link>
+    <description>Recent content in Kcp on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Sat, 19 Nov 2016 19:10:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/kcp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>树莓派遇上kcptun</title>
+      <link>https://luolvshi.me/hugo/hello-kcp/</link>
+      <pubDate>Sat, 19 Nov 2016 19:10:18 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/hello-kcp/</guid>
+      <description>&lt;p&gt;电信和校园网出国线路经常会炸，慢的让人抓狂。Kcptun用来做P2P隧道加速效果显著，尤其适合看视频。本文以centos6和rasbian为例做一个过程梳理。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

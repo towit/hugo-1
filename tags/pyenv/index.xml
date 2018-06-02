@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pyenv on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/pyenv/</link>
+    <description>Recent content in Pyenv on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Wed, 23 Nov 2016 21:21:57 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/pyenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python版本管理之pyenv</title>
+      <link>https://luolvshi.me/hugo/python-pyenv/</link>
+      <pubDate>Wed, 23 Nov 2016 21:21:57 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/python-pyenv/</guid>
+      <description>&lt;p&gt;python的版本管理一直都挺麻烦的感觉，最近花时间研究了下，发现个pyenv这个神器，相当于node的nvm，用起来非常熟悉。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

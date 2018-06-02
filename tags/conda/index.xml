@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conda on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/conda/</link>
+    <description>Recent content in Conda on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 11:32:25 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/conda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>python版本管理之conda</title>
+      <link>https://luolvshi.me/hugo/python-conda/</link>
+      <pubDate>Tue, 29 Nov 2016 11:32:25 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/python-conda/</guid>
+      <description>&lt;p&gt;之前提到过windows下没有pyenv这等神器，但是我们有conda，这也是一款功能强大的作品！
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

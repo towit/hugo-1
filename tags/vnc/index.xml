@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vnc on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/vnc/</link>
+    <description>Recent content in Vnc on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Wed, 16 Nov 2016 21:42:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/vnc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>raspberrypi realvnc</title>
+      <link>https://luolvshi.me/hugo/raspberrypi-realvnc/</link>
+      <pubDate>Wed, 16 Nov 2016 21:42:46 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/raspberrypi-realvnc/</guid>
+      <description>&lt;p&gt;在树莓派9月更新raspbian代号为PIXEL系统之后，集成了对realvnc的支持，其中有一些坑，值得注意！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

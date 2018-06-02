@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angularjs on 云溪部落</title>
+    <link>https://luolvshi.me/hugo/tags/angularjs/</link>
+    <description>Recent content in Angularjs on 云溪部落</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2018</copyright>
+    <lastBuildDate>Sun, 28 Aug 2016 03:19:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://luolvshi.me/hugo/tags/angularjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>angularJS 1.5 component与ui-router的结合</title>
+      <link>https://luolvshi.me/hugo/angular-component-ui-router/</link>
+      <pubDate>Sun, 28 Aug 2016 03:19:22 +0800</pubDate>
+      
+      <guid>https://luolvshi.me/hugo/angular-component-ui-router/</guid>
+      <description>&lt;p&gt;AngularJS team将Component从2.0反向移植到1.5版本已经有一阵子了。在实际项目中由于主要采用MVVM模式，导致封装性欠佳。近日，脑洞大开，研究了以后决定局部实验。本文主要记录在angular-ui-router中渐进引入1.5版本component元件的一些过程。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

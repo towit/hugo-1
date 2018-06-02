@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+
+
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="win10 移除通知中心列表中已卸载的app图标"/>
+<meta name="twitter:description" content="windows10的通知中心中的app列表会随着时间的推移而越来越长，windows并不会自动去检测这些项目是否已经卸载了。有些黑漆漆的图标看着真的很不爽，尤其是具有强迫症的人，更是如此，今天就让我研究了半天，终于找到的解决方案。
+"/>
+
+
+
+  	<meta property="og:title" content=" win10 移除通知中心列表中已卸载的app图标 &middot;  云溪部落" />
+  	<meta property="og:site_name" content="云溪部落" />
+  	<meta property="og:url" content="https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-12-01T23:17:00&#43;08:00" />
+
+    
+    <meta property="og:article:tag" content="win10" />
+    
+    <meta property="og:article:tag" content="windows" />
+    
+    
+
+    <title>
+       win10 移除通知中心列表中已卸载的app图标 &middot;  云溪部落
+    </title>
+
+    <meta name="description" content="代码会唱歌" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://luolvshi.me/hugo/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://luolvshi.me/hugo/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://luolvshi.me/hugo/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://luolvshi.me/hugo/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://luolvshi.me/hugo/index.xml" rel="alternate" type="application/rss+xml" title="云溪部落" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.38.1" />
+
+    <link rel="canonical" href="https://luolvshi.me/hugo/win10-remove-uninstalled-app-from-notification-list/" />
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/tags/">Tags</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/categories/">Categories</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://luolvshi.me/hugo/about/">About</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="https://luolvshi.me/hugo/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav overlay clearfix">
+
+
+      
+        <a class="blog-logo" href="https://luolvshi.me/hugo/"><img src="https://luolvshi.me/hugo/images/mzvast.png" alt="Home" /></a>
+      
+      
+          <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+      
+    </nav>
+
+    
+
+
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+    <header class="post-header">
+      <nav class="breadcrumb">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </nav>
+
+
+        <h1 class="post-title">win10 移除通知中心列表中已卸载的app图标</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-12-01T23:17:00&#43;08:00">
+            Dec 1, 2016
+          </time>
+        
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/win10/">#win10</a></span>
+         
+          <span class="post-tag small"><a href="https://luolvshi.me/hugo/tags/windows/">#windows</a></span>
+         
+         
+          <span class="post-category"><a href="https://luolvshi.me/hugo/categories/tech/">#tech</a></span>
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+
+
+<p>windows10的通知中心中的app列表会随着时间的推移而越来越长，windows并不会自动去检测这些项目是否已经卸载了。有些黑漆漆的图标看着真的很不爽，尤其是具有强迫症的人，更是如此，今天就让我研究了半天，终于找到的解决方案。
+</p>
+
+<h2 id="环境">环境</h2>
+
+<ul>
+<li>windows 10 1607</li>
+<li>具有sqlite数据库编辑功能的软件，如navicat</li>
+</ul>
+
+<h2 id="原理">原理</h2>
+
+<p>微软把这些推送通知相关的数据存储在了一个SQLite数据库中，由于程序卸载后没有调用hook，导致项目残留。</p>
+
+<h2 id="数据库位置">数据库位置</h2>
+
+<ul>
+<li><code>%localappdata%\Microsoft\Windows\Notifications\wpndatabase.db</code></li>
+</ul>
+
+<h2 id="执行sql语句批量处理废弃应用">执行SQL语句批量处理废弃应用</h2>
+
+<ul>
+<li><p>主要处理的是非UWP应用，根据特征（PrimaryId中带有explorer.notification）可以识别。批量删除，无需重启，立即生效。</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#a90d91">delete</span> <span style="color:#a90d91">from</span> <span style="color:#000">NotificationHandler</span> <span style="color:#a90d91">where</span> <span style="color:#000">HandlerType</span> <span style="color:#000">=</span> <span style="color:#c41a16">&#39;app:desktop&#39;</span> <span style="color:#a90d91">and</span>  <span style="color:#000">PrimaryId</span> <span style="color:#a90d91">like</span> <span style="color:#c41a16">&#39;%explorer.notification%&#39;</span></code></pre></div>
+<p>问题到此已经完美解决了。</p></li>
+</ul>
+
+<h2 id="后记">后记</h2>
+
+<p>由于一开始以为微软是写在注册表里面的，所以找来找去只找到了一串<code>explorer.notification{xxx}</code>形式的键名，所在键位为<code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Notifications\Settings\</code>
+，以及发现了图标缓存的位置为<code>C:\Users\mzvast\AppData\Local\Microsoft\Windows\Explorer\NotifyIcon</code>。</p>
+
+<p>之前也Google过中文和英文的资料，都没有人提到重点，后来无意间看到一篇德文的帖子，然后顺藤摸瓜找到了一个很详尽的讨论帖。但是中文方面，始终没有一个明晰的教程。我就记录一下，希望可以帮助到强迫症们！</p>
+
+<h2 id="参考链接">参考链接</h2>
+
+<ul>
+<li><a href="https://www.deskmodder.de/wiki/index.php?title=Benachrichtigungen_und_Aktionen_Alte_Eintr%C3%A4ge_entfernen_l%C3%B6schen_Windows_10">德文原帖</a></li>
+<li><a href="https://answers.microsoft.com/en-us/windows/forum/windows_10-other_settings/remove-an-uninstalled-app-from-the-notification/6cb57f86-23fd-4261-8922-e49f344095e5?page=9">英文院帖</a></li>
+</ul>
+
+
+
+
+
+
+
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="https://luolvshi.me/hugo/" style="background-image: url(https://luolvshi.me/hugo/images/mzvast.png)"><span class="hidden">Nick Wong's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://luolvshi.me/hugo/">Nick Wong</a></h4>
+  
+  <p>The most funny man in the world.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Shanghai, China</span>
+    <span class="author-link icon-link"><a href="https://miaocode.tk">https://miaocode.tk</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this page</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=win10%20%e7%a7%bb%e9%99%a4%e9%80%9a%e7%9f%a5%e4%b8%ad%e5%bf%83%e5%88%97%e8%a1%a8%e4%b8%ad%e5%b7%b2%e5%8d%b8%e8%bd%bd%e7%9a%84app%e5%9b%be%e6%a0%87&nbsp;-&nbsp;%e4%ba%91%e6%ba%aa%e9%83%a8%e8%90%bd&amp;url=https%3a%2f%2fluolvshi.me%2fhugo%2fwin10-remove-uninstalled-app-from-notification-list%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fluolvshi.me%2fhugo%2fwin10-remove-uninstalled-app-from-notification-list%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fluolvshi.me%2fhugo%2fwin10-remove-uninstalled-app-from-notification-list%2f&amp;description=win10%20%e7%a7%bb%e9%99%a4%e9%80%9a%e7%9f%a5%e4%b8%ad%e5%bf%83%e5%88%97%e8%a1%a8%e4%b8%ad%e5%b7%b2%e5%8d%b8%e8%bd%bd%e7%9a%84app%e5%9b%be%e6%a0%87"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fluolvshi.me%2fhugo%2fwin10-remove-uninstalled-app-from-notification-list%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+<aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="https://luolvshi.me/hugo/proxychains-ng-ipv6-error/">
+          <section class="post">
+              <h2>proxychains-ng ipv6 错误的解决方案</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://luolvshi.me/hugo/about-wsl/">
+          <section class="post">
+              <h2>重新审视bash on ubuntu on windows</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">云溪部落</a> All rights reserved - 2018</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/jquery.js"></script>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://luolvshi.me/hugo/js/index.js"></script>
+    
+</body>
+</html>
+
