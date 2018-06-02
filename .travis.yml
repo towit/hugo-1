@@ -1,26 +1,42 @@
+language: go
+
+go:
+  - 1.7.3
+
+branches:
+  only:
+    - source
+
+env:
+ global:
+   - GH_REF: github.com/fydy/hugo.git
+
+
 sudo: required
-python:
-  - "2.7"
 
-# Clean and don't fail
-install:
-  - sudo pip install pygments
-  - wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.deb
-  - sudo dpkg -i /tmp/hugo.deb
-  - rm -rf public || exit 0
+git:
+  submodules: false
 
-# Build the website
-script:
-  - pygmentize -V
+# Use sed to replace the SSH URL with the public URL, then initialize submodules
+before_install:
+  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
-  - hugo -v
 
-# Deploy to GitHub pages
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: public
-  target-branch: master
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  on:
-    branch: source
+install:
+  - export HUGO_VERSION=0.38.1
+  - sudo pip install Pygments
+  - wget https://github.com/spf13/hugo/releases/download/v$HUGO_VERSION/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar xzf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - chmod a+x hugo
+
+script:
+  - ./hugo
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "fydy"
+  - git config user.email "edu@yuns.me"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
