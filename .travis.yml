@@ -39,5 +39,4 @@ after_script:
   - git config user.email "edu@yuns.me"
   - git add .
   - git commit -m "Update docs"
-  - git push --quiet --force https://$hugo@github.com/fydy/hugo.git
-  master
+  - git push --quiet --force https://$hugo@github.com/fydy/hugo.git master
